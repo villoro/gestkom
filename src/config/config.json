@@ -1,13 +1,13 @@
 {
   "site": {
     "title": "Gestkom",
-    "base_url": "https://gestkom.netlify.app",
+    "base_url": "https://gestkom.es",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
     "logo_darkmode": "/images/logo-darkmode.png",
-    "logo_width": "150",
+    "logo_width": "130",
     "logo_height": "30",
     "logo_text": "Gestkom"
   },
@@ -28,7 +28,7 @@
   },
 
   "navigation_button": {
-    "enable": true,
+    "enable": false, 
     "label": "Get Started",
     "link": "https://github.com/zeon-studio/Gestkom"
   },
