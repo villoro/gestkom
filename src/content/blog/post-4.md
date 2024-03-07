@@ -4,7 +4,7 @@ meta_title: ""
 description: "this is meta description"
 date: 2022-04-04T05:00:00Z
 image: "/images/projects/5484.jpg"
-categories: ["Architecture"]
+categories: ["Architecture", "Data"]
 author: "John Doe"
 tags: ["silicon", "technology"]
 draft: false
