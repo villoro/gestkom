@@ -28,9 +28,10 @@ const { banner, features, slogan }: Homepage = homepage.data;
     <div class="container pb-6">
       <div class="row justify-center">
         <div class="text-center md:col-10 lg:col-7">
-          <h1 class="mb-4 text-h3 lg:text-h1">
-            {markdownify(banner.title)}
-          <h1/>
+          <h1
+            set:html={markdownify(banner.title)}
+            class="mb-4 text-h3 lg:text-h1"
+          />
           <p set:html={markdownify(banner.content)} class="mb-8" />
         </div>
       </div>
@@ -44,6 +45,7 @@ const { banner, features, slogan }: Homepage = homepage.data;
           width={1200}
           alt="banner"
           format="webp"
+          loading="eager"
         />
       )
     }
