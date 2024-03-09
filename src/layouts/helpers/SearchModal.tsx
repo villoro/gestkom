@@ -127,7 +127,7 @@ const SearchModal = () => {
       <div id="searchModalOverlay" className="search-modal-overlay" />
       <div className="search-wrapper">
         <div className="search-wrapper-header">
-          <label
+          <div
             htmlFor="searchInput"
             className="absolute left-7 top-[calc(50%-7px)]"
           >
@@ -160,7 +160,7 @@ const SearchModal = () => {
                 ></path>
               </svg>
             )}
-          </label>
+          </div>
           <input
             id="searchInput"
             placeholder="Search..."

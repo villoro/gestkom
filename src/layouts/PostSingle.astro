@@ -32,6 +32,7 @@ const { title, description, author, categories, image, date, tags } = post.data;
                 alt={title}
                 class="w-full rounded"
                 format="webp"
+                loading="eager"
               />
             </div>
           )
@@ -102,7 +103,7 @@ const { title, description, author, categories, image, date, tags } = post.data;
         {
           similarPosts.map((post) => (
             <div class="lg:col-4">
-              <BlogCard data={post} />
+              <BlogCard data={post} loading="lazy" />
             </div>
           ))
         }

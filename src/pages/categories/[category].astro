@@ -32,7 +32,7 @@ const filterByCategories = taxonomyFilter(posts, "categories", category!);
         {
           filterByCategories.map((post) => (
             <div class="mb-14 md:col-6 lg:col-4">
-              <BlogCard data={post} />
+              <BlogCard data={post} loading="eager" />
             </div>
           ))
         }

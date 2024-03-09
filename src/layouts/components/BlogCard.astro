@@ -6,7 +6,7 @@ import { FaRegFolder, FaRegUserCircle } from "react-icons/fa";
 import ImageMod from "./ImageMod.astro";
 
 const { blog_folder }: { blog_folder: string } = config.settings;
-const { data } = Astro.props;
+const { data, loading } = Astro.props;
 const { title, image, date, author, categories } = data.data;
 ---
 
@@ -21,6 +21,7 @@ const { title, image, date, author, categories } = data.data;
           width={480}
           height={360}
           format="webp"
+          loading={loading}
         />
       )
     }
