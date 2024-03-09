@@ -11,6 +11,17 @@ const categories = await getTaxonomy(BLOG_FOLDER, "categories");
 
 <div class="text-center">
 <ul>
+  <li class="m-3 inline-block">
+    <a
+      href={`/blog`}
+      class="rounded bg-theme-light px-4 py-2 text-lg text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark hover:bg-primary hover:text-white dark:hover:bg-darkmode-primary dark:hover:text-dark"
+    >
+      Tots
+      <span class="ml-2 rounded px-2">
+        {allCategories.length}
+      </span>
+    </a>
+  </li>
   {
     categories.map((category: string) => {
       const count = allCategories.filter((c) => c === category).length;
