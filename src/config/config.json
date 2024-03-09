@@ -25,12 +25,6 @@
     "contact_form_action": "#"
   },
 
-  "navigation_button": {
-    "enable": true, 
-    "label": "Contacte",
-    "link": "https://www.linkedin.com/company/10044775"
-  },
-
   "disqus": {
     "enable": true,
     "shortname": "themefisher-template",
