@@ -5,7 +5,6 @@ description: "this is meta description"
 date: 2022-04-04T05:00:00Z
 image: "/images/projects/5476.jpg"
 categories: ["Software", "Data"]
-tags: ["software", "tailwind"]
 draft: false
 ---
 
