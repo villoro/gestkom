@@ -7,7 +7,7 @@ import ImageMod from "./ImageMod.astro";
 
 const { blog_folder }: { blog_folder: string } = config.settings;
 const { data, loading } = Astro.props;
-const { title, image, date, author, categories } = data.data;
+const { title, image, date, categories } = data.data;
 ---
 
 <div class="bg-body dark:bg-darkmode-body">
