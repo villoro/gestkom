@@ -6,7 +6,7 @@ import CallToAction from "@/partials/CallToAction.astro";
 import Testimonial from "@/partials/Testimonial.astro";
 import type { Button, Feature } from "@/types";
 import { getEntry } from "astro:content";
-import { FaCheck } from "react-icons/fa";
+import { FaCheck, FaLightbulb } from "react-icons/fa";
 
 interface Homepage {
   banner: {
@@ -21,52 +21,47 @@ interface Homepage {
 const homepage = await getEntry("homepage", "-index");
 const testimonial = await getEntry("sections", "testimonial");
 const call_to_action = await getEntry("sections", "call-to-action");
-const { banner, features }: Homepage = homepage.data;
+const { banner, features, slogan }: Homepage = homepage.data;
 ---
 
 <Base>
   <!-- Banner -->
-  <section class="section pt-14">
-    <div class="container">
+  <section class="pt-14">
+    <div class="container pb-6">
       <div class="row justify-center">
-        <div class="lg:col-7 md:col-9 mb-8 text-center">
-          <h1
-            set:html={markdownify(banner.title)}
-            class="mb-4 text-h3 lg:text-h1"
-          />
+        <div class="text-center md:col-10 lg:col-7">
+          <h1 class="mb-4 text-h3 lg:text-h1">
+            {markdownify(banner.title)}
+          <h1/>
           <p set:html={markdownify(banner.content)} class="mb-8" />
-          {
-            banner.button.enable && (
-              <a
-                class="btn btn-primary"
-                href={banner.button.link}
-                target={
-                  banner.button.link.startsWith("http") ? "_blank" : "_self"
-                }
-                rel="noopener"
-              >
-                {banner.button.label}
-              </a>
-            )
-          }
         </div>
-        {
-          banner.image && (
-            <div class="col-12">
-              <ImageMod
-                src={banner.image}
-                height={380}
-                width={1200}
-                alt="banner"
-                format="webp"
-              />
-            </div>
-          )
-        }
+      </div>
+    </div>
+    {
+      banner.image && (
+        <ImageMod
+          class="mx-auto w-full"
+          src={banner.image}
+          height={380}
+          width={1200}
+          alt="banner"
+          format="webp"
+        />
+      )
+    }
+  </section>
+
+  <!-- Slogan -->
+  <section class="section pt-14 pb-14 bg-primary dark:bg-darkmode-primary">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="text-h3 lg:text-h1 text-white dark:text-black flex items-center justify-center">
+          <FaLightbulb className="mr-6" />
+          {markdownify(slogan.title)}
+        </h1>
       </div>
     </div>
   </section>
-  <!-- /Banner -->
 
   <!-- Features -->
   {

@@ -1,13 +1,12 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Astro Project"
-  content: "Astroplate is a free starter template built with Astro and TailwindCSS, providing everything you need to jumpstart your Astro project and save valuable time."
-  image: "/images/banner.png"
-  button:
-    enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/astroplate"
+  title: "Gestkom S.L."
+  content: "Gestkom Outsourcing S.L. és una empresa catalana especialitzada en la gestió de projectes i construcció, compromesa amb el disseny contemporani i la satisfacció del client, garantint qualitat i innovació en els treballs realitzats."
+  image: "/images/banner.jpg"
+    
+slogan:
+  title: "Gestió de projectes y d’idees brillants"
 
 # Features
 features:
