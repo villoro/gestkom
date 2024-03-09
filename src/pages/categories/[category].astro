@@ -26,7 +26,7 @@ const posts = await getSinglePage(BLOG_FOLDER);
 const filterByCategories = taxonomyFilter(posts, "categories", category!);
 ---
 
-<Base title={category}>
+<Base title={"Posts " + category}>
   <section class="section p-14">
     <BlogCategories />
 
