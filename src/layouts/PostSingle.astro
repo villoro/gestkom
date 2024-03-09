@@ -15,7 +15,7 @@ const { post } = Astro.props;
 const posts = await getSinglePage(COLLECTION_FOLDER);
 const similarPosts = similarItems(post, posts);
 const { Content } = await post.render();
-const { title, description, author, categories, image, date, tags } = post.data;
+const { title, description, categories, image, date, tags } = post.data;
 ---
 
 <section class="section pt-7">
@@ -32,18 +32,13 @@ const { title, description, author, categories, image, date, tags } = post.data;
                 alt={title}
                 class="w-full rounded"
                 format="webp"
+                loading="eager"
               />
             </div>
           )
         }
         <h1 set:html={markdownify(title)} class="h2 mb-4" />
         <ul class="mb-4">
-          <li class="mr-4 inline-block">
-            <a href={`/authors/${slugify(author)}`}>
-              <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
-              {humanize(author)}
-            </a>
-          </li>
           <li class="mr-4 inline-block">
             <FaRegFolder className={"mr-2 -mt-1 inline-block"} />
             {
@@ -102,7 +97,7 @@ const { title, description, author, categories, image, date, tags } = post.data;
         {
           similarPosts.map((post) => (
             <div class="lg:col-4">
-              <BlogCard data={post} />
+              <BlogCard data={post} loading="lazy" />
             </div>
           ))
         }

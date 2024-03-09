@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  fix_version:
+  check_version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -53,16 +53,3 @@ jobs:
       - name: Check if version needs to be updated
         if: steps.changes.outputs.code == 'true'
         run: python .github/scripts/check_if_update_needed.py --version_current=$VERSION_CURRENT --version_main=$VERSION_MAIN
-
-      # Update only when needed
-      - name: Update version
-        if: env.NEEDS_UPDATE == 'true'
-        run: poetry version patch
-
-      # Commit changes and froce github_status to be updated
-      - name: Commit new version
-        if: env.NEEDS_UPDATE == 'true'
-        uses: EndBug/add-and-commit@v9
-        with:
-          default_author: github_actions
-          message: "Poetry minor version update"

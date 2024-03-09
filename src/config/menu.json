@@ -11,20 +11,6 @@
     {
       "name": "Blog",
       "url": "/blog"
-    },
-    {
-      "name": "Categories",
-      "url": "/categories"
-    }
-  ],
-  "footer": [
-    {
-      "name": "Elements",
-      "url": "/elements"
-    },
-    {
-      "name": "Privacy Policy",
-      "url": "/privacy-policy"
     }
   ]
 }
