@@ -1,0 +1,33 @@
+---
+import config from "@/config/config.json";
+import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
+import { humanize } from "@/lib/utils/textConverter";
+
+const BLOG_FOLDER = "blog";
+
+const allCategories = await getAllTaxonomy(BLOG_FOLDER, "categories");
+const categories = await getTaxonomy(BLOG_FOLDER, "categories");
+---
+
+<div class="text-center">
+<ul>
+  {
+    categories.map((category: string) => {
+      const count = allCategories.filter((c) => c === category).length;
+      return (
+        <li class="m-3 inline-block">
+          <a
+            href={`/categories/${category}`}
+            class="rounded bg-theme-light px-4 py-2 text-lg text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark hover:bg-primary hover:text-white dark:hover:bg-darkmode-primary dark:hover:text-dark"
+          >
+            {humanize(category)}{" "}
+            <span class="ml-2 rounded px-2">
+              {count}
+            </span>
+          </a>
+        </li>
+      );
+    })
+  }
+</ul>
+</div>
