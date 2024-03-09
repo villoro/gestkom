@@ -32,12 +32,14 @@ const { title, image, date, author, categories } = data.data;
   <ul class="mb-4">
     {date && <li class="inline-block mr-4">{dateFormat(date)}</li>}
     <li class="mr-4 inline-block">
-      <FaRegFolder className={"mr-1 ml-4 -mt-1 inline-block"} />
+      <FaRegFolder className={"ml-4 -mt-1 inline-block"} />
       {
-        categories.map((category: string, index: number) => (
-          <a href={`/categories/${slugify(category)}`}>
+        categories.map((category: string) => (
+          <a
+            class="m-1 rounded bg-theme-light px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark" 
+            href={`/categories/${slugify(category)}`}
+          >
             {humanize(category)}
-            {index !== categories.length - 1 && ","}
           </a>
         ))
       }
