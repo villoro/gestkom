@@ -13,30 +13,26 @@ const { title, description, meta_title, image } = about.data;
   title={title}
   meta_title={meta_title}
   description={description}
-  image={image}
 >
-  <section class="section-sm">
-    <div class="container">
-      <div class="row justify-center">
-        <div class="text-center md:col-10 lg:col-7">
-          {
-            image && (
-              <ImageMod
-                class="mx-auto mb-6 rounded-lg"
-                src={image}
-                width={200}
-                height={200}
-                alt={title}
-                format="webp"
-              />
-            )
-          }
-          <h2 set:html={markdownify(title)} class="h3 mb-6" />
-          <div class="content">
-            <Content />
-          </div>
+  <div class="container">
+    <div class="row justify-center">
+      <div class="text-center md:col-10 lg:col-7">
+        <ImageMod
+          class="mx-auto mb-6 rounded-lg w-full"
+          src={image}
+          width={1126}
+          height={446}
+          alt={title}
+          format="webp"
+        />
+
+        <h2 set:html={markdownify(title)} class="h3 mb-6" />
+        
+        <div class="content">
+          <Content />
         </div>
+        
       </div>
     </div>
-  </section>
+    </div>
 </Base>

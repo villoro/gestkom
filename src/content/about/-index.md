@@ -1,9 +1,16 @@
 ---
-title: "Hey, I am John Doe!"
+title: "Qui som?"
 meta_title: "About"
-description: "this is meta description"
-image: "/images/avatar.png"
+description: "Gestkom Outsourcing S.L. és una empresa catalana especialitzada en la gestió de projectes i construcció, compromesa amb el disseny contemporani i la satisfacció del client, garantint qualitat i innovació en els treballs realitzats."
+image: "/images/blueprints.jpg"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+
+Després de trenta anys dedicats a la gestió de projectes per compte aliena, vam decidir crear la nostra pròpia empresa. Ajuntant experiència, més il·lusió i més treball, l’any 2010 neix **Gestkom Outsourcing S.L.**, dedicada a la **Gestió de Projectes i Idees Brillants**.
+
+Som més que una empresa de construcció i rehabilitació; som un laboratori d’idees i de creació compromès amb el disseny actual i contemporani. Ens apassionen els desafiaments i incorporem idees brillants al projecte. El nostre equip treballa a Catalunya per a tota mena de projectes, aconseguint uns acabats espectaculars tant en habitatges com en espais professionals.
+
+Liderem el tracte preferencial als clients i oferim solucions noves i sense competència en el sector immobiliari, incloent un servei d'atenció al client 365x24 durant el projecte. Afegim el nostre valor personal i empresarial al projecte i ens comprometem a decidir el millor pel nostre client.
+
+Garantim els nostres treballs segons la normativa vigent. Estem associats al Gremi de Constructors d’Obres de Barcelona, al Registre d’Empreses Acreditades a Catalunya en el sector de la Construcció (REA) i a la Comissió de Rehabilitació i Manteniment d’Edificis de Catalunya (RIME).
