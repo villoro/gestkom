@@ -6,20 +6,10 @@ import type { Button, Feature } from "@/types";
 import { getEntry } from "astro:content";
 import { FaCheck, FaLightbulb } from "react-icons/fa";
 
-interface Homepage {
-  banner: {
-    title: string;
-    content: string;
-    image: string;
-    button: Button;
-  };
-  features: Feature[];
-}
-
 const homepage = await getEntry("homepage", "-index");
 const testimonial = await getEntry("sections", "testimonial");
 const call_to_action = await getEntry("sections", "call-to-action");
-const { banner, features, slogan }: Homepage = homepage.data;
+const { banner, features, slogan } = homepage.data;
 ---
 
 <Base>
