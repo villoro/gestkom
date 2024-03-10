@@ -3,6 +3,7 @@ title: Podem viure en un magatzem?
 code: 5545
 date: 2022/08/3
 youtube_id: coqLJvAu9g8
+categories: ["Cases"]
 description: Viure en un antic magatzem rehabilitat com a habitatge amb llum natural que travessa l'espai, utilitzant un passadís ampli com a canal de llum. L'habitació central disposa d'una finestra orientada al saló, mentre que la casa també inclou una cuina, dos banys i un tranquil jardí urbà.
 ---
 

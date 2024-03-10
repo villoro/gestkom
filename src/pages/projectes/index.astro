@@ -1,6 +1,6 @@
 ---
 import ProjectCard from "@/components/ProjectCard.astro";
-
+import ProjectCategories from "@/components/ProjectCategories.astro";
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
@@ -9,18 +9,19 @@ import { getEntry } from "astro:content";
 
 const PROJECTS_FOLDER = "projects";
 
-const projectsPage = await getEntry(PROJECTS_FOLDER, "-index");
-const projects = await getSinglePage(PROJECTS_FOLDER);
+const projectsIndex = await getEntry(FOLDER, "-index");
+const projects = await getSinglePage(FOLDER);
 const sortedProjects = sortByDate(projects);
 ---
 
 <Base
-  title={projectsPage.data.title}
-  meta_title={projectsPage.data.meta_title}
-  image={projectsPage.data.image}
-  description={projectsPage.data.description}
+  title={projectsIndex.data.title}
+  meta_title={projectsIndex.data.meta_title}
+  image={projectsIndex.data.image}
+  description={projectsIndex.data.description}
 >
   <section class="section p-14">
+    <ProjectCategories />
 
     <!-- Projects -->
     <div class="container">

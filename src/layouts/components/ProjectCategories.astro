@@ -3,17 +3,17 @@ import config from "@/config/config.json";
 import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
 import { humanize } from "@/lib/utils/textConverter";
 
-const BLOG_FOLDER = "blog";
+const FOLDER = "projectes";
 
-const allCategories = await getAllTaxonomy(BLOG_FOLDER, "categories");
-const categories = await getTaxonomy(BLOG_FOLDER, "categories");
+const allCategories = await getAllTaxonomy(FOLDER, "categories");
+const categories = await getTaxonomy(FOLDER, "categories");
 ---
 
 <div class="text-center">
 <ul>
   <li class="m-3 inline-block">
     <a
-      href={`/blog`}
+      href={`/projectes`}
       class="rounded bg-theme-light px-4 py-2 text-lg text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark hover:bg-primary hover:text-white dark:hover:bg-darkmode-primary dark:hover:text-dark"
     >
       Tots
