@@ -10,7 +10,7 @@ import { getEntry } from "astro:content";
 const PROJECTS_FOLDER = "projects";
 
 const projectsPage = await getEntry(PROJECTS_FOLDER, "-index");
-const { projects } = projectsPage.data;
+const projects = await getSinglePage(PROJECTS_FOLDER);
 const sortedProjects = sortByDate(projects);
 ---
 
@@ -28,12 +28,7 @@ const sortedProjects = sortByDate(projects);
         {
           sortedProjects.map((project) => (
             <div class="mb-14 md:col-6 lg:col-4">
-              <ProjectCard
-                title={project.title}
-                code={project.code}
-                slug={project.slug}
-                date={project.date}
-              />
+              <ProjectCard data={project} />
             </div>
           ))
         }

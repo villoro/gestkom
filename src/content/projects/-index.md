@@ -2,16 +2,4 @@
 title: Projectes
 meta_title: Projectes
 description: Explora els nostres projectes de construcció i renovació destacats. Des de cases modernes fins a espais comercials innovadors, descobreix la nostra excel·lència en el disseny i l'execució. Inspira't amb els nostres treballs i descobreix com podem fer realitat el teu projecte de somni.
-
-projects:
-  - title: Podem viure en un magatzem?
-    code: 5545
-    slug: podem-viure-en-un-magatzem
-    date: 2022/08/31
-    image: /images/service-1.png
-    youtube: coqLJvAu9
-    content: |
-      Podem viure en un magatzem? La resposta és sí. Sí, podem viure en un antic magatzem ara rehabilitat com a habitatge amb tot el confort. El fet que la casa estigui entre mitgeres no impedeix que la llum natural vagi de punta a punta de la casa. La idea original és crear un canal de llum al passadís que travessa tota la casa i il·lumina totes les estances. Per això, vam fer un sostre inclinat a la part posterior que acaba en un gran finestral orientat al passadís, el qual arriba fins a la porta d’entrada, també amb plafons de vidre.
-
-      El fet de tenir un passadís ampli (130 cm) al centre de la casa ens va ajudar a implementar aquest concepte del "canal de llum", una idea brillant. L’habitació central disposa d’una finestra orientada al saló que aporta llum i ventilació. Una cuina, dos banys i un tranquil jardí urbà arrodoneixen el projecte
 ---
