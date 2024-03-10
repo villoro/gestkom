@@ -18,7 +18,8 @@
     "theme_switcher": true,
     "default_theme": "system",
     "pagination": 3,
-    "blog_folder": "blog"
+    "blog_folder": "blog",
+    "projects_folder": "projects"
   },
 
   "params": {

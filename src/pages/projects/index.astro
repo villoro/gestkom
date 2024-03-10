@@ -1,0 +1,45 @@
+---
+import ProjectCard from "@/components/ProjectCard.astro";
+
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+import { getEntry } from "astro:content";
+
+const PROJECTS_FOLDER = "projects";
+
+const projectsPage = await getEntry(PROJECTS_FOLDER, "-index");
+const { projects } = projectsPage.data;
+const sortedProjects = sortByDate(projects);
+---
+
+<Base
+  title={projectsPage.data.title}
+  meta_title={projectsPage.data.meta_title}
+  image={projectsPage.data.image}
+  description={projectsPage.data.description}
+>
+  <section class="section p-14">
+
+    <!-- Projects -->
+    <div class="container">
+      <div class="row">
+        {
+          sortedProjects.map((project) => (
+            <div class="mb-14 md:col-6 lg:col-4">
+              <ProjectCard
+                title={project.title}
+                slug={project.slug}
+                date={project.date}
+                image={project.image}
+                youtube={project.youtube}
+                content={project.content}
+              />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Base>
