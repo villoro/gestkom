@@ -3,7 +3,7 @@ title: Espai cuina
 code: 9999
 date: 2011/3/9
 youtube_id: DLJHfGOwHiI
-categories: ["Cuines i banys"]
+categories: ["Showroom"]
 description: Renovació d'un espai professional a Barcelona, convertint un espai lliure en un showroom amb gran lluminositat i ambient acollidor, que inspira a imaginar el futur.
 ---
 
