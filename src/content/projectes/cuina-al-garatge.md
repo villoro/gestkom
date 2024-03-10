@@ -2,7 +2,7 @@
 title: La cuina al garatge
 code: 9999  #5589
 date: 2021/4/23
-youtube_id: coqLJvAu9g8
+youtube_id: ltvo7keF2bk
 categories: ["Cuines i banys"]
 description: Descobreix com un antic magatzem ha estat rehabilitat per convertir-se en un habitatge modern amb un canal de llum al passadís, plafons de vidre i espais ben il·luminats. Una cuina, dos banys i un jardí urbà complementen aquest projecte.
 ---
