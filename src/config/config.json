@@ -17,7 +17,7 @@
     "sticky_header": true,
     "theme_switcher": true,
     "default_theme": "system",
-    "pagination": 3,
+    "pagination": 12,
     "blog_folder": "blog",
     "projects_folder": "projectes",
     "page_name": "pagina"
