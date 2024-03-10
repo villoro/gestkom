@@ -11,7 +11,7 @@ slogan:
 # Features
 features:
   - title: Els nostres serveis
-    image: "/images/0000.jpg"
+    image: "/images/9999.jpg"
     content: "Gestkom té un enfocament centrat en el disseny contemporani i la satisfacció del client, garantint sempre la qualitat i la innovació en els nostres treballs. Ofereix una àmplia gamma de serveis en el sector de la construcció i la rehabilitació. Les nostres especialitats inclouen:"
     bulletpoints:
       - Creació i gestió de projectes
