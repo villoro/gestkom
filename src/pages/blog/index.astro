@@ -4,7 +4,6 @@ import Pagination from "@/components/Pagination.astro";
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
-import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 import { getEntry } from "astro:content";
 
@@ -12,8 +11,6 @@ const FOLDER = "blog";
 
 const postIndex = await getEntry(FOLDER, "-index");
 const posts = await getSinglePage(FOLDER);
-const allCategories = await getAllTaxonomy(FOLDER, "categories");
-const categories = await getTaxonomy(FOLDER, "categories");
 const sortedPosts = sortByDate(posts);
 const totalPages: number = Math.ceil(posts.length / config.settings.pagination);
 const currentPosts = sortedPosts.slice(0, config.settings.pagination);
@@ -27,8 +24,8 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
 >
   <section class="section p-14">
 
-    <!-- blog posts -->
-    <div class="container pt-14">
+    <!-- Posts -->
+    <div class="container">
       <div class="row">
         {
           currentPosts.map((post) => (
