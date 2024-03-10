@@ -33,9 +33,9 @@ const currentProjects = sortedProjects.slice(0, config.settings.pagination);
     <div class="container  pt-14">
       <div class="row">
         {
-          currentProjects.map((project) => (
+          currentProjects.map((item) => (
             <div class="mb-14 md:col-6 lg:col-4">
-              <ProjectCard data={project} />
+              <ProjectCard data={item} />
             </div>
           ))
         }

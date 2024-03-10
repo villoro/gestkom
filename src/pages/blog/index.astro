@@ -27,9 +27,9 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
     <div class="container">
       <div class="row">
         {
-          currentPosts.map((post) => (
+          currentPosts.map((item) => (
             <div class="mb-14 md:col-6 lg:col-4">
-              <BlogCard data={post} loading="eager" />
+              <BlogCard data={item} loading="eager" />
             </div>
           ))
         }
