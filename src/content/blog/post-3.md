@@ -3,7 +3,7 @@ title: How to build an Application with modern Technology
 meta_title: ""
 description: This is meta description
 date: 2022-04-04T05:00:00Z
-image: /images/projects/5476.jpg
+image: /images/projectes/5476.jpg
 categories: ["Software", "Data"]
 draft: false
 ---
