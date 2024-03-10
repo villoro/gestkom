@@ -1,4 +1,5 @@
 ---
+import config from "@/config/config.json";
 import ProjectCard from "@/components/ProjectCard.astro";
 import ProjectCategories from "@/components/ProjectCategories.astro";
 import Pagination from "@/components/Pagination.astro";
@@ -9,11 +10,11 @@ import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 import { getEntry } from "astro:content";
 
-const FOLDER = "projectes";
+const { projects_folder } = config.settings;
 
 const { slug } = Astro.params;
-const projectsIndex = await getEntry(FOLDER, "-index");
-const projects = await getSinglePage(FOLDER);
+const projectsIndex = await getEntry(projects_folder, "-index");
+const projects = await getSinglePage(projects_folder);
 const sortedProjects = sortByDate(projects);
 const totalPages = Math.ceil(projects.length / config.settings.pagination);
 const currentPage = slug && !isNaN(Number(slug)) ? Number(slug) : 1;
@@ -22,8 +23,9 @@ const indexOfFirstPost = indexOfLastPost - config.settings.pagination;
 const currentProjects = sortedProjects.slice(indexOfFirstPost, indexOfLastPost);
 
 export async function getStaticPaths() {
-  const FOLDER = "blog";
-  const items = await getSinglePage(FOLDER);
+  const config = await import('@/config/config.json');
+  const { projects_folder } = config.settings;
+  const items = await getSinglePage(projects_folder);
   const totalPages = Math.ceil(items.length / config.settings.pagination);
   const paths = [];
 
@@ -59,7 +61,7 @@ export async function getStaticPaths() {
         }
       </div>
       <Pagination
-        section={FOLDER}
+        section={projects_folder}
         currentPage={currentPage}
         totalPages={totalPages}
       />

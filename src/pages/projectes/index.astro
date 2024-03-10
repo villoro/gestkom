@@ -1,4 +1,5 @@
 ---
+import config from "@/config/config.json";
 import ProjectCard from "@/components/ProjectCard.astro";
 import ProjectCategories from "@/components/ProjectCategories.astro";
 import Pagination from "@/components/Pagination.astro";
@@ -9,12 +10,12 @@ import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 import { getEntry } from "astro:content";
 
-const FOLDER = "projectes";
+const { projects_folder } = config.settings;
 
-const projectsIndex = await getEntry(FOLDER, "-index");
-const projects = await getSinglePage(FOLDER);
-const allCategories = await getAllTaxonomy(FOLDER, "categories");
-const categories = await getTaxonomy(FOLDER, "categories");
+const projectsIndex = await getEntry(projects_folder, "-index");
+const projects = await getSinglePage(projects_folder);
+const allCategories = await getAllTaxonomy(projects_folder, "categories");
+const categories = await getTaxonomy(projects_folder, "categories");
 const sortedProjects = sortByDate(projects);
 const totalPages: number = Math.ceil(projects.length / config.settings.pagination);
 const currentProjects = sortedProjects.slice(0, config.settings.pagination);
@@ -30,7 +31,7 @@ const currentProjects = sortedProjects.slice(0, config.settings.pagination);
     <ProjectCategories />
 
     <!-- Projects -->
-    <div class="container  pt-14">
+    <div class="container pt-14">
       <div class="row">
         {
           currentProjects.map((item) => (
@@ -41,7 +42,7 @@ const currentProjects = sortedProjects.slice(0, config.settings.pagination);
         }
       </div>
       <Pagination
-        section={FOLDER}
+        section={projects_folder}
         currentPage={1}
         totalPages={totalPages}
       />

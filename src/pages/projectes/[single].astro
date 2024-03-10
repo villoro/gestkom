@@ -4,8 +4,9 @@ import ProjectSingle from "@/layouts/ProjectSingle.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 
 export async function getStaticPaths() {
-  const FOLDER = "projectes";
-  const item = await getSinglePage(FOLDER);
+  const config = await import('@/config/config.json');
+  const { projects_folder } = config.settings;
+  const item = await getSinglePage(projects_folder);
 
   const paths = item.map((project) => ({
     params: {
