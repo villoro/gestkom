@@ -11,13 +11,31 @@ import { getEntry } from "astro:content";
 
 const FOLDER = "projectes";
 
+const { slug } = Astro.params;
 const projectsIndex = await getEntry(FOLDER, "-index");
 const projects = await getSinglePage(FOLDER);
-const allCategories = await getAllTaxonomy(FOLDER, "categories");
-const categories = await getTaxonomy(FOLDER, "categories");
 const sortedProjects = sortByDate(projects);
-const totalPages: number = Math.ceil(projects.length / config.settings.pagination);
-const currentProjects = sortedProjects.slice(0, config.settings.pagination);
+const totalPages = Math.ceil(projects.length / config.settings.pagination);
+const currentPage = slug && !isNaN(Number(slug)) ? Number(slug) : 1;
+const indexOfLastPost = currentPage * config.settings.pagination;
+const indexOfFirstPost = indexOfLastPost - config.settings.pagination;
+const currentProjects = sortedProjects.slice(indexOfFirstPost, indexOfLastPost);
+
+export async function getStaticPaths() {
+  const FOLDER = "blog";
+  const items = await getSinglePage(FOLDER);
+  const totalPages = Math.ceil(items.length / config.settings.pagination);
+  const paths = [];
+
+  for (let i = 1; i < totalPages; i++) {
+    paths.push({
+      params: {
+        slug: (i + 1).toString(),
+      },
+    });
+  }
+  return paths;
+}
 ---
 
 <Base
@@ -27,22 +45,20 @@ const currentProjects = sortedProjects.slice(0, config.settings.pagination);
   description={projectsIndex.data.description}
 >
   <section class="section p-14">
-    <ProjectCategories />
-
-    <!-- Projects -->
-    <div class="container  pt-14">
+    <!-- Posts -->
+    <div class="container">
       <div class="row">
         {
-          currentProjects.map((project) => (
+          currentProjects.map((post) => (
             <div class="mb-14 md:col-6 lg:col-4">
-              <ProjectCard data={project} />
+              <ProjectCard data={post} loading="eager" />
             </div>
           ))
         }
       </div>
       <Pagination
         section={FOLDER}
-        currentPage={1}
+        currentPage={currentPage}
         totalPages={totalPages}
       />
     </div>

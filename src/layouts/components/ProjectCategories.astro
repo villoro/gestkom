@@ -3,7 +3,7 @@ import config from "@/config/config.json";
 import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
 import { humanize } from "@/lib/utils/textConverter";
 
-const FOLDER = "projects";
+const FOLDER = "projectes";
 
 const allCategories = await getAllTaxonomy(FOLDER, "categories");
 const categories = await getTaxonomy(FOLDER, "categories");
