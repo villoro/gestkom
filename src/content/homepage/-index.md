@@ -20,5 +20,5 @@ features:
     button:
       enable: true
       label: Veure els projectes
-      link: /blog
+      link: /projectes
 ---
