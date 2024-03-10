@@ -5,7 +5,7 @@ import { humanize, plainify, slugify } from "@/lib/utils/textConverter";
 import { FaRegClock } from "react-icons/fa";
 import ImageMod from "./ImageMod.astro";
 
-const { blog_folder }: { blog_folder: string } = config.settings;
+const { blog_folder } = config.settings;
 const { data, loading } = Astro.props;
 const { title, image, date } = data.data;
 ---

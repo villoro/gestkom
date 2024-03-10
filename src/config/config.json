@@ -19,7 +19,8 @@
     "default_theme": "system",
     "pagination": 3,
     "blog_folder": "blog",
-    "projects_folder": "projectes"
+    "projects_folder": "projectes",
+    "page_name": "pagina"
   },
 
   "params": {
