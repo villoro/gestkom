@@ -17,13 +17,12 @@ export async function getStaticPaths() {
 }
 
 const { project } = Astro.props;
-const { title, code, date, youtube, meta_title, description } = project.data;
+const { title, code, date, youtube, description } = project.data;
 ---
 
 <Base
   title={title}
-  meta_title={meta_title}
-  description={description}
+  meta_title={description}
 >
   <ProjectSingle project={project} />
 </Base>

@@ -8,13 +8,15 @@ import dateFormat from "@/lib/utils/dateFormat";
 import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
 import { FaRegClock, FaRegFolder, FaRegUserCircle } from "react-icons/fa";
 
+import Youtube from '@/shortcodes/Youtube';
+
 const COLLECTION_FOLDER = "blog";
 const { project } = Astro.props;
 
 const projects = await getSinglePage(COLLECTION_FOLDER);
 // const similarProjects = similarItems(project, projects);
 const { Content } = await project.render();
-const { title, date, youtube, description } = project.data;
+const { title, date, youtube_id, description } = project.data;
 ---
 
 <section class="section pt-7">
@@ -29,6 +31,14 @@ const { title, date, youtube, description } = project.data;
             {dateFormat(date)}
           </li>
         </ul>
+
+        <div class="content mb-10">
+          <Youtube
+            id={youtube_id}
+            title={title}
+            client:load
+          />
+        </div>
 
         <div class="content mb-10">
           <Content />
