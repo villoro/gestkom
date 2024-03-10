@@ -30,7 +30,7 @@ const { title, code, date, categories } = data.data;
     <FaRegClock className={"-mt-1 inline-block"} />
     {date && <li class="inline-block mr-4">{dateFormat(date)}</li>}
     <li class="mr-4 inline-block">
-      <FaRegFolder className={"ml-4 -mt-1 inline-block"} />
+      <FaRegFolder className={"md:ml-4 -mt-1 inline-block"} />
       {
         categories.map((category: string) => (
           <a
