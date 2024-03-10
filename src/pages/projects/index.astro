@@ -30,11 +30,9 @@ const sortedProjects = sortByDate(projects);
             <div class="mb-14 md:col-6 lg:col-4">
               <ProjectCard
                 title={project.title}
+                code={project.code}
                 slug={project.slug}
                 date={project.date}
-                image={project.image}
-                youtube={project.youtube}
-                content={project.content}
               />
             </div>
           ))
