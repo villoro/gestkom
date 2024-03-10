@@ -1,20 +1,19 @@
 ---
+import config from "@/config/config.json";
 import ProjectCard from "@/components/ProjectCard.astro";
 import Share from "@/components/Share.astro";
 import Disqus from "@/helpers/Disqus";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
-// import similarItems from "@/lib/utils/similarItems";
 import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
 import { FaRegClock, FaRegFolder, FaRegUserCircle } from "react-icons/fa";
 
 import Youtube from '@/shortcodes/Youtube';
 
-const COLLECTION_FOLDER = "blog";
+const { projects_folder } = config.settings;
 const { project } = Astro.props;
 
-const projects = await getSinglePage(COLLECTION_FOLDER);
-// const similarProjects = similarItems(project, projects);
+const projects = await getSinglePage(projects_folder);
 const { Content } = await project.render();
 const { title, date, youtube_id, description } = project.data;
 ---

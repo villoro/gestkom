@@ -1,4 +1,5 @@
 ---
+import config from "@/config/config.json";
 import BlogCard from "@/components/BlogCard.astro";
 import Share from "@/components/Share.astro";
 import Disqus from "@/helpers/Disqus";
@@ -9,10 +10,10 @@ import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
 import { FaRegClock, FaRegFolder, FaRegUserCircle } from "react-icons/fa";
 import ImageMod from "./components/ImageMod.astro";
 
-const COLLECTION_FOLDER = "blog";
+const { blog_folder } = config.settings;
 const { post } = Astro.props;
 
-const posts = await getSinglePage(COLLECTION_FOLDER);
+const posts = await getSinglePage(blog_folder);
 const similarPosts = similarItems(post, posts);
 const { Content } = await post.render();
 const { title, description, categories, image, date } = post.data;
