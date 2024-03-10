@@ -19,6 +19,6 @@ features:
       - Reformes integrals de pisos
     button:
       enable: true
-      label: Veure tots els projectes
+      label: Veure els projectes
       link: /blog
 ---

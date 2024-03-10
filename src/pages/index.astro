@@ -92,9 +92,11 @@ const { banner, features, slogan }: Homepage = homepage.data;
                 ))}
               </ul>
               {feature.button.enable && (
-                <a class="btn btn-primary mt-5" href={feature.button.link}>
-                  {feature.button.label}
-                </a>
+                <div class="flex justify-center md:justify-start">
+                  <a class="btn btn-primary lg:mt-5" href={feature.button.link}>
+                    {feature.button.label}
+                  </a>
+                </div>
               )}
             </div>
           </div>
