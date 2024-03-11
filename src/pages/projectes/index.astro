@@ -31,9 +31,9 @@ const currentProjects = sortedProjects.slice(0, config.settings.pagination);
     <div class="container pt-6 md:pt-14">
       <div class="row">
         {
-          currentProjects.map((item) => (
-            <div class="mb-14 md:col-6 lg:col-4">
-              <ProjectCard data={item} />
+          currentProjects.map((item, index) => (
+            <div class="mb-14 md:col-6 lg:col-4" key={index}>
+              <ProjectCard data={item} loading={index < 6 ? "eager" : "lazy"} />
             </div>
           ))
         }

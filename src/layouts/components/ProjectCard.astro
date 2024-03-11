@@ -6,7 +6,7 @@ import { FaRegFolder, FaRegClock } from "react-icons/fa";
 import ImageMod from "./ImageMod.astro";
 
 const { projects_folder }: { projects_folder: string } = config.settings;
-const { data } = Astro.props;
+const { data, loading } = Astro.props;
 const { title, code, date, categories } = data.data;
 ---
 
@@ -19,7 +19,7 @@ const { title, code, date, categories } = data.data;
       width={480}
       height={360}
       format="webp"
-      loading="eager"
+      loading={loading}
     />
 
     <h4 class="mb-3 hover:text-primary dark:hover:text-darkmode-primary">
