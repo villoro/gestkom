@@ -3,7 +3,7 @@ title: Recordes la maqueta que vàrem publicar al blog fa uns mesos?
 meta_title: Recordes la maqueta que vàrem publicar al blog fa uns mesos?
 description: Projecte tècnic complex finalitzat amb èxit, mantenint l'essència de l'habitatge.
 date: 2021-12-14
-image: /images/blog/2021-maqueta.jpg
+image: /images/blog/2021/maqueta.jpg
 draft: false
 ---
 

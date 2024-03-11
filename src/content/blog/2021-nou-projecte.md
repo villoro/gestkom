@@ -3,7 +3,7 @@ title: "Comencem un Nou Projecte: Rehabilitació Integral d'una Planta Baixa"
 meta_title: Comencem un Nou Projecte
 description: Descobreix el nostre emocionant nou projecte de rehabilitació integral d'una planta baixa entre mitgeres, on buscarem solucions innovadores per aconseguir ventilació i il·luminació optimitzades.
 date: 2021-09-03
-image: /images/blog/2021-proposta-planta-baixa.jpg
+image: /images/blog/2021/proposta-planta-baixa.jpg
 draft: false
 ---
 

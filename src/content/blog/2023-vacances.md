@@ -3,7 +3,7 @@ title: Vacances
 meta_title: Vacances
 description: Ja estem de vacances
 date: 2023-08-01
-image: /images/blog/2023-vacances.jpg
+image: /images/blog/2023/vacances.jpg
 draft: false
 ---
 

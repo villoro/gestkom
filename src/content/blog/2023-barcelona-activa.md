@@ -3,7 +3,7 @@ title: Barcelona Activa
 meta_title: Barcelona Activa
 description: Gestkom SL. va participar amb èxit a la sessió formativa "Idees Madures" de Barcelona Activa, compartint experiències i estratègies per inspirar emprenedors emergents.
 date: 2023-06-26
-image: /images/blog/2023-idees-madures.jpg
+image: /images/blog/2023/idees-madures.jpg
 draft: false
 ---
 
