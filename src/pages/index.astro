@@ -1,15 +1,15 @@
 ---
-import ImageMod from "@/components/ImageMod.astro";
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
-import type { Button, Feature } from "@/types";
 import { getEntry } from "astro:content";
 import { FaCheck, FaLightbulb } from "react-icons/fa";
 
 const homepage = await getEntry("homepage", "-index");
-const testimonial = await getEntry("sections", "testimonial");
-const call_to_action = await getEntry("sections", "call-to-action");
-const { banner, features, slogan } = homepage.data;
+const { banner, slogan, services } = homepage.data;
+
+import { Image } from 'astro:assets';
+import bannerImage from '../images/banner.jpg';
+import servicesImage from '../images/projecte-exemple.jpg';
 ---
 
 <Base>
@@ -26,19 +26,14 @@ const { banner, features, slogan } = homepage.data;
         </div>
       </div>
     </div>
-    {
-      banner.image && (
-        <ImageMod
-          class="mx-auto w-full"
-          src={banner.image}
-          height={380}
-          width={1200}
-          alt="banner"
-          format="webp"
-          loading="eager"
-        />
-      )
-    }
+
+    <Image
+      src={bannerImage}
+      alt={banner.imageAlt}
+      widths={[240, 540, 720, 1600, bannerImage.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, (max-width: 2160px) 1600px, ${bannerImage.width}px`}
+      loading="eager"
+    />
   </section>
 
   <!-- Slogan -->
@@ -53,46 +48,41 @@ const { banner, features, slogan } = homepage.data;
     </div>
   </section>
 
-  <!-- Features -->
-  {
-    features.map((feature, index: number) => (
-      <section class={`section-sm ${index % 2 === 0 && "bg-gradient"}`}>
-        <div class="container">
-          <div class="row items-center justify-between">
-            <div
-              class={`mb:md-0 mb-6 md:col-5 ${index % 2 !== 0 && "md:order-2"}`}
-            >
-              <ImageMod
-                src={feature.image}
-                height={480}
-                width={520}
-                alt={feature.title}
-                format="webp"
-              />
+  <!-- Services -->
+  <section class="section-sm bg-gradient">
+    <div class="container">
+      <div class="row items-center justify-between">
+        <div class="mb-6 md:col-7 lg:col-6 md:order-2">
+          <h2 set:html={markdownify(services.title)} class="mb-4" />
+          <p set:html={markdownify(services.content)} class="mb-8 text-lg" />
+          <ul>
+            {services.bulletpoints.map((bullet: string) => (
+              <li class="relative mb-4 pl-6">
+                <FaCheck className={"absolute left-0 top-1.5"} />
+                <span set:html={markdownify(bullet)} />
+              </li>
+            ))}
+          </ul>
+          {services.button.enable && (
+            <div class="flex justify-center md:justify-start">
+              <a class="btn btn-primary lg:mt-5" href={services.button.link}>
+                {services.button.label}
+              </a>
             </div>
-            <div class={`md:col-7 lg:col-6 ${index % 2 !== 0 && "md:order-1"}`}>
-              <h2 set:html={markdownify(feature.title)} class="mb-4" />
-              <p set:html={markdownify(feature.content)} class="mb-8 text-lg" />
-              <ul>
-                {feature.bulletpoints.map((bullet: string) => (
-                  <li class="relative mb-4 pl-6">
-                    <FaCheck className={"absolute left-0 top-1.5"} />
-                    <span set:html={markdownify(bullet)} />
-                  </li>
-                ))}
-              </ul>
-              {feature.button.enable && (
-                <div class="flex justify-center md:justify-start">
-                  <a class="btn btn-primary lg:mt-5" href={feature.button.link}>
-                    {feature.button.label}
-                  </a>
-                </div>
-              )}
-            </div>
-          </div>
+          )}
         </div>
-      </section>
-    ))
-  }
+        <div class="mb:md-0 mb-6 md:col-5 md:order-1">
+          <Image
+            src={servicesImage}
+            alt={services.imageAlt}
+            widths={[180, 360, 720, servicesImage.width]}
+            sizes={`(max-width: 360px) 180px, (max-width: 720px) 360px, (max-width: 1600px) 720px, ${servicesImage.width}px`}
+            loading="eager"
+            class="rounded"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
 
 </Base>
