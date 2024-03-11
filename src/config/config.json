@@ -36,7 +36,12 @@
   "metadata": {
     "meta_author": "Arnau Villoro",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Descobreix Gestkom S.L., la teva solució integral en construcció i rehabilitació a Catalunya. Amb més de 30 anys d'experiència, oferim serveis de gestió de projectes, disseny contemporani i acabats d'excel·lència. Explora els nostres projectes destacats i inspira't amb les nostres solucions innovadores per a habitatges i espais professionals.",
-    "meta_email": "gestkom@gestkom.es"
+    "meta_description": "Descobreix Gestkom S.L., la teva solució integral en construcció i rehabilitació a Catalunya. Amb més de 30 anys d'experiència, oferim serveis de gestió de projectes, disseny contemporani i acabats d'excel·lència. Explora els nostres projectes destacats i inspira't amb les nostres solucions innovadores per a habitatges i espais professionals."
+  },
+
+  "footer": {
+    "owner": "© Gestkom S.L.",
+    "email": "gestkom@gestkom.es",
+    "phone": "(+34) 629 433 000"
   }
 }

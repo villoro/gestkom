@@ -1,16 +1,16 @@
 ---
+import config from "@/config/config.json";
 import BlogCard from "@/components/BlogCard.astro";
 import Pagination from "@/components/Pagination.astro";
-import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 import { getEntry } from "astro:content";
 
-const FOLDER = "blog";
+const { blog_folder } = config.settings;
 
-const postIndex = await getEntry(FOLDER, "-index");
-const posts = await getSinglePage(FOLDER);
+const postIndex = await getEntry(blog_folder, "-index");
+const posts = await getSinglePage(blog_folder);
 const sortedPosts = sortByDate(posts);
 const totalPages: number = Math.ceil(posts.length / config.settings.pagination);
 const currentPosts = sortedPosts.slice(0, config.settings.pagination);
@@ -22,7 +22,7 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
   image={postIndex.data.image}
   description={postIndex.data.description}
 >
-  <section class="section p-14">
+  <section class="section pt-6 md:pt-14">
     <!-- Posts -->
     <div class="container">
       <div class="row">
@@ -35,7 +35,7 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
         }
       </div>
       <Pagination
-        section={FOLDER}
+        section={blog_folder}
         currentPage={1}
         totalPages={totalPages}
       />
