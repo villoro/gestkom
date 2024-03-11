@@ -44,14 +44,14 @@ export async function getStaticPaths() {
   image={postIndex.data.image}
   description={postIndex.data.description}
 >
-  <section class="section p-14">
+  <section class="section pt-6 md:pt-14">
     <!-- Posts -->
     <div class="container">
       <div class="row">
         {
-          currentPosts.map((item) => (
-            <div class="mb-14 md:col-6 lg:col-4">
-              <BlogCard data={item} loading="eager" />
+          currentPosts.map((item, index) => (
+            <div class="mb-14 md:col-6 lg:col-4" key={index}>
+              <BlogCard data={item} loading={index < 6 ? "eager" : "lazy"} />
             </div>
           ))
         }
