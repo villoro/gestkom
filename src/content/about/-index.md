@@ -2,7 +2,7 @@
 title: Qui som?
 meta_title: Qui som?
 description: Gestkom Outsourcing S.L. és una empresa catalana especialitzada en la gestió de projectes i construcció, compromesa amb el disseny contemporani i la satisfacció del client, garantint qualitat i innovació en els treballs realitzats.
-image: /images/planols.jpg
+imageAlt: Fundador revisant uns plànols
 draft: false
 ---
 

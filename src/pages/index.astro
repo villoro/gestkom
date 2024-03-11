@@ -1,14 +1,10 @@
 ---
-import ImageMod from "@/components/ImageMod.astro";
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
-import type { Button, Feature } from "@/types";
 import { getEntry } from "astro:content";
 import { FaCheck, FaLightbulb } from "react-icons/fa";
 
 const homepage = await getEntry("homepage", "-index");
-const testimonial = await getEntry("sections", "testimonial");
-const call_to_action = await getEntry("sections", "call-to-action");
 const { banner, slogan, services } = homepage.data;
 
 import { Image } from 'astro:assets';
@@ -34,8 +30,8 @@ import servicesImage from '../images/9999.jpg';
     <Image
       src={bannerImage}
       alt={banner.imageAlt}
-      widths={[240, 540, 720, bannerImage.width]}
-      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${bannerImage.width}px`}
+      widths={[240, 540, 720, 1600, bannerImage.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, (max-width: 2160px) 1600px, ${bannerImage.width}px`}
       loading="eager"
     />
   </section>

@@ -1,12 +1,14 @@
 ---
-import ImageMod from "@/components/ImageMod.astro";
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntry } from "astro:content";
 
 const about = await getEntry("about", "-index");
 const { Content } = await about.render();
-const { title, description, meta_title, image } = about.data;
+const { title, description, meta_title, imageAlt } = about.data;
+
+import { Image } from 'astro:assets';
+import aboutImage from '../images/planols.jpg';
 ---
 
 <Base
@@ -14,15 +16,14 @@ const { title, description, meta_title, image } = about.data;
   meta_title={meta_title}
   description={description}
 >
-  <ImageMod
-    class="mx-auto mb-6 w-full"
-    src={image}
-    width={1126}
-    height={446}
-    alt={title}
-    format="webp"
+  <Image
+    src={aboutImage}
+    alt={imageAlt}
+    widths={[240, 540, 720, 1600, aboutImage.width]}
+    sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, (max-width: 2160px) 1600px, ${aboutImage.width}px`}
     loading="eager"
   />
+
   <section class="section pt-14 pb-14">
     <div class="container">
       <div class="row justify-center">
