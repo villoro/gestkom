@@ -16,7 +16,7 @@ const { post } = Astro.props;
 const posts = await getSinglePage(blog_folder);
 const similarPosts = similarItems(post, posts);
 const { Content } = await post.render();
-const { title, description, categories, image, date } = post.data;
+const { title, description, image, date } = post.data;
 ---
 
 <section class="section pt-7">
@@ -43,20 +43,6 @@ const { title, description, categories, image, date } = post.data;
           <li class="mr-8 inline-block">
             <FaRegClock className={"mr-1 -mt-1 inline-block"} />
             {dateFormat(date)}
-          </li>
-
-          <li class="mr-4 inline-block">
-            <FaRegFolder className={"mr-1 -mt-1 inline-block"} />
-            {
-              categories.map((category: string) => (
-                <a
-                  class="m-1 rounded bg-theme-light px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark" 
-                  href={`/categories/${slugify(category)}`}
-                >
-                  {humanize(category)}
-                </a>
-              ))
-            }
           </li>
         </ul>
 
