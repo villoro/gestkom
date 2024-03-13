@@ -1,6 +1,6 @@
 ---
 title: Abans un magatzem, ara un habitatge
-code: 9999 # 5606
+code: 5606
 date: 2020/12/3
 youtube_id: r7A-sodhUTo
 categories: ["Cases"]

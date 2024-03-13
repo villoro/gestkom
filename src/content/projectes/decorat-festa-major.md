@@ -1,6 +1,6 @@
 ---
 title: Decorat festa major
-code: 9999
+code: 1308
 date: 2013/9/05
 youtube_id: bxzcNRk4fdw
 categories: ["Decorats"]

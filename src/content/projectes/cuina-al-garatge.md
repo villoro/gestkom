@@ -1,6 +1,6 @@
 ---
 title: La cuina al garatge
-code: 9999  #5589
+code: 5589
 date: 2021/4/23
 youtube_id: ltvo7keF2bk
 categories: ["Cuines i banys"]
