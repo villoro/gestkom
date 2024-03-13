@@ -7,4 +7,4 @@ image: /images/blog/2020/logo-10-aniversari.png
 draft: false
 ---
 
-Aquest any 2020 estem d’aniversari! Ja fa deu anys que vàrem començar aquesta aventura amb molta il·lusió i també, cal dir-ho, amb una certa ingenuïtat. Veníem del mateix sector amb les mateixes responsabilitats però per compte d’una altra empresa. Aquella aposta de futur, amb el temps hem vist que va ser encertada. Estem molt contens, i al llarg de l’any anirem fent alguna celebració.
+Aquest any 2020 estem d'aniversari! Ja fa deu anys que vàrem començar aquesta aventura amb molta il·lusió i també, cal dir-ho, amb una certa ingenuïtat. Veníem del mateix sector amb les mateixes responsabilitats però per compte d'una altra empresa. Aquella aposta de futur, amb el temps hem vist que va ser encertada. Estem molt contens, i al llarg de l'any anirem fent alguna celebració.

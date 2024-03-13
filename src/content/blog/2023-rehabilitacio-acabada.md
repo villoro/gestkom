@@ -8,4 +8,4 @@ image: /images/blog/2023/final-projecte.jpg
 draft: false
 ---
 
-Ja hem acabat la rehabilitació d’aquesta planta baixa. Aviat veureu el vídeo de tot el procés al nostre web corporatiu a l'apartat de projectes. Esperem que us agradi!
+Ja hem acabat la rehabilitació d'aquesta planta baixa. Aviat veureu el vídeo de tot el procés al nostre web corporatiu a l'apartat de projectes. Esperem que us agradi!

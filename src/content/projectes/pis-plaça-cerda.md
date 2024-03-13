@@ -13,5 +13,5 @@ Al principi, dubtaven entre buscar un pis al qual poder entrar a viure directame
 
 El repte de reformar un pis complet amb una distribució fragmentada era aconseguir un ambient harmònic que aprofités al màxim les dimensions i la llum de la façana posterior, incloent adaptacions per a una habitació insonoritzada per a un membre de la família.
 
-La idea principal de la reforma de l’habitatge va ser unificar l’antic espai seccionat i convertir-lo en un lloc completament obert per obtenir llum i ventilació creuada d’una estada a una altra. En aquesta nova distribució diàfana i lluminosa, es van integrar els pilars amb naturalitat, ajudant a equilibrar l’espai interior juntament amb una nova organització dels elements a la terrassa.
+La idea principal de la reforma de l'habitatge va ser unificar l'antic espai seccionat i convertir-lo en un lloc completament obert per obtenir llum i ventilació creuada d'una estada a una altra. En aquesta nova distribució diàfana i lluminosa, es van integrar els pilars amb naturalitat, ajudant a equilibrar l'espai interior juntament amb una nova organització dels elements a la terrassa.
 
