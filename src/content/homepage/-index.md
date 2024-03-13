@@ -6,7 +6,7 @@ banner:
   imageAlt: Exemple d'un projecte de construcció
     
 slogan:
-  title: Gestió de projectes y d’idees brillants
+  title: Gestió de projectes i d'idees brillants
 
 # Features
 services:

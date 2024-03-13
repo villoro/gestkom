@@ -1,6 +1,6 @@
 ---
 title: Espai cuina
-code: 9999
+code: 1103_low_res
 date: 2011/3/9
 youtube_id: DLJHfGOwHiI
 categories: ["Showroom"]

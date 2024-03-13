@@ -7,5 +7,5 @@ image: /images/blog/2021/jardi-interior.jpg
 draft: false
 ---
 
-Ja hem enllestit la rehabilitació d’aquest singular habitatge de Barcelona. Ben aviat podràs veure tot el vídeo de la renovació al nostre web corporatiu.
+Ja hem enllestit la rehabilitació d'aquest singular habitatge de Barcelona. Ben aviat podràs veure tot el vídeo de la renovació al nostre web corporatiu.
 

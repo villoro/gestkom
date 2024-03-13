@@ -1,6 +1,6 @@
 ---
 title: Taules singulars
-code: 9999 # 5496
+code: 5496
 date: 2014/7/10
 youtube_id: _IS7U3Tx7xQ
 categories: ["Varis"]
