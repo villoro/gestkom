@@ -1,6 +1,6 @@
 ---
 title: Kayak desmontable
-code: 1201_low_res
+code: 1201
 date: 2012/1/6
 youtube_id: XWvxWiiA6KU
 categories: ["Varis"]
