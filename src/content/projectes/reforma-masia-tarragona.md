@@ -1,6 +1,6 @@
 ---
 title: Reforma d'una masia a Tarragona
-code: 1200_low_res
+code: 1200
 date: 2012/1/3
 youtube_id: VGWmqA1kVM4
 categories: ["Cases"]
