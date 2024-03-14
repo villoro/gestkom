@@ -1,6 +1,6 @@
 ---
-title: Medea: Empresa de Prevenció de Riscos Laborals
-meta_title: Medea: Empresa de Prevenció de Riscos Laborals
+title: "Medea: Empresa de Prevenció de Riscos Laborals"
+meta_title: "Medea: Empresa de Prevenció de Riscos Laborals"
 description: Descobreix com Medea ajuda a assegurar la seguretat del nostre equip de treball en el camp de la prevenció de riscos laborals.
 date: 2016-12-01
 image: /images/blog/2016/medea.jpg
