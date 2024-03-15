@@ -1,6 +1,6 @@
 ---
 title: Podem viure en un magatzem?
-code: 9999
+code: 6000
 date: 2022/8/3
 youtube_id: coqLJvAu9g8
 categories: ["Cases"]
