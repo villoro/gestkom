@@ -3,7 +3,7 @@ title: "Celebrant 10 Anys: Una Dècada d'Experiència i Creixement"
 meta_title: Celebrant 10 Anys
 description: Uneix-te a nosaltres mentre celebrem deu anys d'èxits i creixement. Descobreix com hem crescut des dels inicis fins avui.
 date: 2020-01-10
-image: /images/blog/2020/logo-10-aniversari.png
+image: /images/blog/2020/logo-10-aniversari.jpg
 draft: false
 ---
 

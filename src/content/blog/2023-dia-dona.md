@@ -3,7 +3,7 @@ title: Dia de la dona
 meta_title: Dia de la dona
 description: Gestkom SL reafirma el seu suport a la igualtat de gènere i la llibertat individual.
 date: 2023-03-08
-image: /images/blog/2023/dia-dona.png
+image: /images/blog/2023/dia-dona.jpg
 draft: false
 ---
 
