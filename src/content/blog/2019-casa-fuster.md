@@ -2,7 +2,7 @@
 title: Renovació del Restaurant Panot a l'Hotel Casa Fuster
 meta_title: Renovació del Restaurant Panot a l'Hotel Casa Fuster
 description: Descobreix com vam millorar l'ergonomia i la distribució de la cuina existent en aquest projecte emblemàtic.
-date: 2000-01-01
+date: 2019-07-12
 image: /images/blog/2019/casa-fuster-1.jpg
 draft: false
 ---
