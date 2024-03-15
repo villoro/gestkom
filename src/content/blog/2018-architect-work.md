@@ -20,5 +20,3 @@ Tots els productes exposats durant [ARCHITECT@WORK](https://barcelona.architecta
 No podíem perdre'ns aquest esdeveniment.
 
 ![architect-work-2](/images/blog/2018/architect-work-2.jpg)
-
-![architect-work-3](/images/blog/2018/architect-work-3.jpg)
