@@ -77,7 +77,7 @@ import servicesImage from '../images/projecte-exemple.jpg';
             alt={services.imageAlt}
             widths={[180, 360, 600, 800, servicesImage.width]}
             sizes={`(max-width: 360px) 180px, (max-width: 720px) 360px, (max-width: 1200px) 600px, (max-width: 1600px) 800px, ${servicesImage.width}px`}
-            loading="eager"
+            loading="lazy"
             class="rounded"
           />
         </div>

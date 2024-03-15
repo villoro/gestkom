@@ -1,6 +1,6 @@
 ---
 title: Tràiler promocional
-code: 1106_low_res
+code: 1106
 date: 2011/12/6
 youtube_id: 23TuFtH0IiE
 categories: ["Varis"]
