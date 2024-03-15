@@ -1,5 +1,5 @@
 // similar products
-const similarItems = (currentItem: any, allItems: any[]) => {
+const similarItems = (currentItem: any, allItems: any[], limit: number = 3) => {
   let categories: string[] = [];
 
   // set categories
@@ -17,7 +17,10 @@ const similarItems = (currentItem: any, allItems: any[]) => {
     (product) => product.slug !== currentItem.slug,
   );
 
-  return filterBySlug;
+  // Limit to the specified number of elements
+  const limitedResults = filterBySlug.slice(0, limit);
+
+  return limitedResults;
 };
 
 export default similarItems;

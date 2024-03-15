@@ -18,6 +18,7 @@
     "theme_switcher": true,
     "default_theme": "system",
     "pagination": 12,
+    "similar_items_length": 3,
     "blog_folder": "blog",
     "projects_folder": "projectes",
     "page_name": "pagina"
