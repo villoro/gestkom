@@ -1,4 +1,5 @@
 ---
+slug: llum-espai-comfort
 title: Llum, espai i comfort
 code: 5545
 date: 2018/11/26

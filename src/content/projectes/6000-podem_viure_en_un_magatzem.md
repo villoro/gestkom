@@ -1,4 +1,5 @@
 ---
+slug: podem-viure-en-un-magatzem
 title: Podem viure en un magatzem?
 code: 6000
 date: 2022/8/3

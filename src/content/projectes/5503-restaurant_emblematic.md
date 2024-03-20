@@ -1,4 +1,5 @@
 ---
+slug: restaurant-emblematic
 title: Restaurant emblemàtic
 code: 5503
 date: 2016/7/24

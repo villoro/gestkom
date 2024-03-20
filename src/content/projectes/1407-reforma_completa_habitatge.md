@@ -1,5 +1,6 @@
 ---
-title: Reforma completa d'una vivenda
+slug: reforma-completa-habitatge
+title: Reforma completa d'una habitatge
 code: 1407
 date: 2014/4/28
 youtube_id: fGK3wut2tss

@@ -1,4 +1,5 @@
 ---
+slug: reforma-integral-cuina
 title: Reforma integral d'una cuina
 code: 5426
 date: 2014/8/3

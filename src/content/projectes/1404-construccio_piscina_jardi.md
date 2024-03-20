@@ -1,5 +1,6 @@
 ---
-title: Construcció d'una piscina
+slug: construccio-piscina-jardi
+title: Construcció d'una piscina al jardí
 code: 1404
 date: 2014/4/30
 youtube_id: FW3xrJp3ZvI

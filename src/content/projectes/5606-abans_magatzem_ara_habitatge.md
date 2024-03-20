@@ -1,4 +1,5 @@
 ---
+slug: abans-magatzem-ara-habitatge
 title: Abans un magatzem, ara un habitatge
 code: 5606
 date: 2020/12/3

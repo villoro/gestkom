@@ -1,4 +1,5 @@
 ---
+slug: rehabilitacio-total-nous-espais
 title: Rehabilitació total, nous espais
 code: 5472
 date: 2019/2/25

@@ -1,4 +1,5 @@
 ---
+slug: renovacio-pis-anys-60
 title: Renovació d'un pis dels anys 60
 code: 5491
 date: 2016/12/27

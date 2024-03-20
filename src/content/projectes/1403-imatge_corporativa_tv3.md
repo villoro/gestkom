@@ -1,4 +1,5 @@
 ---
+slug: imatge-corporativa-tv3
 title: Projecte d'image corporativa a TV3
 code: 1403
 date: 2014/4/29

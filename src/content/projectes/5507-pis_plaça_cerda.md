@@ -1,4 +1,5 @@
 ---
+slug: pis-plaça-cerda
 title: Pis a la plaça Cerdà
 code: 5507
 date: 2017/7/15

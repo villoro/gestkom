@@ -1,4 +1,5 @@
 ---
+slug: trailer-promocional
 title: Tràiler promocional
 code: 1106
 date: 2011/12/6
