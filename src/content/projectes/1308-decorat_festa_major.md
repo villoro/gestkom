@@ -1,5 +1,6 @@
 ---
-title: Decorat festa major
+slug: decorat-festa-major-sants
+title: Decorat festa major Sants
 code: 1308
 date: 2013/9/05
 youtube_id: bxzcNRk4fdw

@@ -1,4 +1,5 @@
 ---
+slug: reforma-masia-tarragona
 title: Reforma d'una masia a Tarragona
 code: 1200
 date: 2012/1/3

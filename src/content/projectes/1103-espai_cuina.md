@@ -1,4 +1,5 @@
 ---
+slug: espai-cuina
 title: Espai cuina
 code: 1103_low_res
 date: 2011/3/9

@@ -1,4 +1,5 @@
 ---
+slug: actualitzant-menjador
 title: Actualizant el menjador
 code: 5473
 date: 2015/11/20

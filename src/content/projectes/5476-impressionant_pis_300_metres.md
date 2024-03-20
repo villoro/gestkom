@@ -1,5 +1,6 @@
 ---
-title: Impressionant pis de 300 m2
+slug: impressionant-pis-300-metres
+title: Impressionant pis de 300 metres quadrats
 code: 5476
 date: 2016/9/13
 youtube_id: RuMHgx1Pe4Q

@@ -1,4 +1,5 @@
 ---
+slug: kayak-desmontable
 title: Kayak desmontable
 code: 1201
 date: 2012/1/6

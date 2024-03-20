@@ -1,4 +1,5 @@
 ---
+slug: reforma-atic
 title: Reforma d'un àtic
 code: 5450
 date: 2018/7/6

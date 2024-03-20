@@ -1,4 +1,5 @@
 ---
+slug: cuina-al-garatge
 title: La cuina al garatge
 code: 5589
 date: 2021/4/23

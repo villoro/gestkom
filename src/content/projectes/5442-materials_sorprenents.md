@@ -1,4 +1,5 @@
 ---
+slug: materials-sorprenents
 title: Materials sorprenents
 code: 5442
 date: 2016/3/7

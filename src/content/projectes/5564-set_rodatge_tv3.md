@@ -1,4 +1,5 @@
 ---
+slug: set-rodatge-tv3
 title: Set de rodatge TV3
 code: 5564
 date: 2017/12/1

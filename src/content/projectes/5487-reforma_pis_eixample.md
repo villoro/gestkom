@@ -1,4 +1,5 @@
 ---
+slug: reforma-pis-eixample
 title: Reforma d'un pis a l'Eixample
 code: 5487
 date: 2015/12/4

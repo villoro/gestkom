@@ -1,4 +1,5 @@
 ---
+slug: reforma-integral-local-granollers
 title: Reforma integral d'un local a Granollers
 code: 1405
 date: 2014/5/28

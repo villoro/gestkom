@@ -1,4 +1,5 @@
 ---
+slug: bcn-futur
 title: BCN futur
 code: 1202
 date: 2012/2/12

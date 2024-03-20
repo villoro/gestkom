@@ -1,4 +1,5 @@
 ---
+slug: taules-singulars
 title: Taules singulars
 code: 5496
 date: 2014/7/10

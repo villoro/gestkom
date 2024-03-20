@@ -1,4 +1,5 @@
 ---
+slug: tres-habitacions-renovacio-luminica
 title: "Tres Habitacions: Renovació Lumínica"
 code: 5544
 date: 2019/8/12
