@@ -24,10 +24,6 @@
     "page_name": "pagina"
   },
 
-  "params": {
-    "contact_form_action": "#"
-  },
-
   "disqus": {
     "enable": true,
     "shortname": "themefisher-template",
