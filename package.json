@@ -1,6 +1,6 @@
 {
   "name": "gestkom",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Gestkom web page",
   "author": "Arnau Villoro <arnau@villoro.com>",
   "license": "MIT",
@@ -35,8 +35,7 @@
     "react-icons": "^5.0.1",
     "react-lite-youtube-embed": "^2.4.0",
     "remark-collapse": "^0.1.2",
-    "remark-toc": "^9.0.0",
-    "swiper": "^11.0.5"
+    "remark-toc": "^9.0.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
