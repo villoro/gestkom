@@ -24,12 +24,6 @@
     "page_name": "pagina"
   },
 
-  "disqus": {
-    "enable": true,
-    "shortname": "themefisher-template",
-    "settings": {}
-  },
-
   "metadata": {
     "meta_author": "Arnau Villoro",
     "meta_image": "/images/og-image.png",
